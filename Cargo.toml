@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 rltk = "0.8.7"
+specs = "0.19.0"
+specs-derive = "0.4.1"
