@@ -25,7 +25,7 @@ impl GameState for State {
         let position = self.ecs.read_storage::<Position>();
         let renderables = self.ecs.read_storage::<Renderable>();
 
-        for (pos, render) in (&position, &renderables).join(){
+        for (pos, render) in (&position, &renderables).join() {
             ctx.set(pos.x, pos.y, render.fg, render.bg, render.glyph);
         }
     }
